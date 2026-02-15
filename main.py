@@ -44,12 +44,12 @@ while True:   #while loop to continue game
         print("")
         print("Type This:     ",tt)
         print()
-        tme=time()
+        time1=time()
         usrninput= input("ENTER: ")
-        tme2=time()
+        time2=time()
 
         # Calling functions
-        print(f"Speed : {time_fuc(tme,tme2,usrninput)} w/m")
+        print(f"Speed : {time_fuc(time1,time2,usrninput)} w/m")
         qw=countingerrors (tt,usrninput)
         print("Errors : ",qw)
         at=len(tt)
