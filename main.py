@@ -35,8 +35,8 @@ test= ["hello its me this side",
 "there is no one named this lives here"]
 
 while True:   #while loop to continue game
-    am= input('Press "s" to start and "q" to quit: ')
-    if am == "s":
+    main_input= input('Press "s" to start and "q" to quit: ')
+    if main_input == "s":
         tt=rm.choice(test)
         print('')
         print("                      TYPING TEST        ")
@@ -54,7 +54,7 @@ while True:   #while loop to continue game
         print("Errors : ",qw)
         at=len(tt)
         print(f"Accuracy  : {accuracy_fuc(len(tt), qw)}%")
-    elif am== "q":
+    elif main_input== "q":
         print("you exited the game")
         break
     else:
