@@ -1,4 +1,4 @@
-from time import *
+import time as tm
 import random as rm
 
 #function to calculate errors
@@ -28,28 +28,35 @@ def accuracy_fuc(total_cheracter,errors):
 
 
 
-test= ["hello its me this side",
-"here is your typing speed test created by using python",
-"once upon a time there was a king who did nothing and died",
-"if there was some one there ",
-"there is no one named this lives here"]
+sentences = [
+    "the orange cat slept peacefully on the warm windowsill",
+    "a sudden gust of wind scattered the papers across the room",
+    "she found a mysterious key hidden inside the old book",
+    "the city lights shimmered beautifully against the night sky",
+    "he brewed a fresh cup of coffee before starting his work",
+    "a colorful kite soared high above the sandy beach",
+    "the mountain trail was quiet except for chirping birds",
+    "they laughed loudly at the unexpected joke",
+    "rain tapped gently on the roof throughout the evening",
+    "the ancient clock chimed exactly at midnight"
+]
 
 while True:   #while loop to continue game
     am= input('Press "s" to start and "q" to quit: ')
     if am == "s":
-        tt=rm.choice(test)
+        tt=rm.choice(sentences)
         print('')
         print("                      TYPING TEST        ")
         print()
         print("")
         print("Type This:     ",tt)
         print()
-        time1=time()
+        tme=tm.time()
         usrninput= input("ENTER: ")
-        time2=time()
+        tme2=tm.time()
 
-        # Calling functions
-        print(f"Speed : {time_fuc(time1,time2,usrninput)} w/m")
+        # Calling functionsq
+        print(f"Speed : {time_fuc(tme,tme2,usrninput)} w/m")
         qw=countingerrors (tt,usrninput)
         print("Errors : ",qw)
         at=len(tt)
@@ -59,3 +66,4 @@ while True:   #while loop to continue game
         break
     else:
         print('wrong input')
+
