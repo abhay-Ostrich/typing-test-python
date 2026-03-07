@@ -39,6 +39,7 @@ sentences = [
     "they laughed loudly at the unexpected joke",
     "rain tapped gently on the roof throughout the evening",
     "the ancient clock chimed exactly at midnight"
+    "THERE IS A SNAKE IN A ROOM"
 ]
 
 while True:   #while loop to continue game
