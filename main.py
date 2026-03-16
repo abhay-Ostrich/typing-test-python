@@ -12,7 +12,7 @@ def countingerrors (a,b):
             error=error + 1
     return error
 
-# function to calculate time
+# function to calculate time taken
 def time_fuc(tstart,tend,usrinput):
     time_delay=tend-tstart
     time_delay_in_min= time_delay/60
