@@ -42,7 +42,7 @@ sentences = [
     "THERE IS A SNAKE IN A ROOM"
 ]
 
-while True:   #while loop to continue game
+while True:   # WHILE LOOP TO CONTINUE THE GAME
     am= input('Press "s" to start and "q" to quit: ')
     if am == "s":
         tt=rm.choice(sentences)
